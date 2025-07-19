@@ -712,8 +712,9 @@ message (STATUS "===============================================================
 
 add_subdirectory (docs)
 add_subdirectory (src)
-add_subdirectory (examples)
-
+if (${BUILD_SYSTEMC_EXAMPLES})
+  add_subdirectory (examples)
+endif()
 
 ###############################################################################
 # Install README files
