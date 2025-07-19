@@ -268,12 +268,12 @@ set (SystemCTLM_SOVERSION "${SystemCTLM_VERSION_MAJOR}.${SystemCTLM_VERSION_MINO
 ###############################################################################
 
 if (NOT CMAKE_BUILD_TYPE)
-  set (CMAKE_BUILD_TYPE Release CACHE STRING
+  set (CMAKE_BUILD_TYPE Debug CACHE STRING
        "Choose the type of build, options are: empty, Debug, Release, RelWithDebInfo, MinSizeRel."
        FORCE)
 endif (NOT CMAKE_BUILD_TYPE)
 
-set (CMAKE_CXX_STANDARD 98 CACHE STRING
+set (CMAKE_CXX_STANDARD 23 CACHE STRING
      "C++ standard to build all targets. Supported values are 98, 11, and 14.")
 set (CMAKE_CXX_STANDARD_REQUIRED ON CACHE BOOL
      "The with CMAKE_CXX_STANDARD selected C++ standard is a requirement.")
